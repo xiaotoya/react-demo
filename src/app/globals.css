@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  /* 设置默认的主题全局变量 */
+  --background: #c7dcff;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* 设置暗色变量 */
     --background: #0a0a0a;
     --foreground: #ededed;
   }
