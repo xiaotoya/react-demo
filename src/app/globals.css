@@ -6,6 +6,7 @@
   /* 设置默认的主题全局变量 */
   --background: #c7dcff;
   --foreground: #171717;
+  --blue: #1772f6;
 }
 
 @media (prefers-color-scheme: dark) {

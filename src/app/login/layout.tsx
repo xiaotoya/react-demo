@@ -1,7 +1,7 @@
 'use client'
 
 import styled from 'styled-components';
-const Inputcss = styled.div`
+const LoginLayoutCSS = styled.div`
   .login-container {
     width: 100%;
     height: 100vh;
@@ -35,12 +35,11 @@ export default function LoginLayout({
     children: React.ReactNode;
   }>) {
     return (
-      <Inputcss>
+      <LoginLayoutCSS>
         <div className="login-container">
           <img src='/logo.png' alt='logo' />
           {children}
         </div>
-      </Inputcss>
-      
+      </LoginLayoutCSS>
     );
   }
