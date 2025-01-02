@@ -14,12 +14,13 @@ const TabStyle = styled.div`
     .tab-container {
         display: flex;
         flex-direction: column;
-        padding: 0 24px 30px 24px;
+        /* padding: 0 24px 30px 24px; */
         .tab-title-container {
             display: flex;
             align-items: center;
             .tab-title {
-    
+                margin-right: 24px;
+                padding-bottom: 10px;
             }
             .active {
                 font-weight: 600;

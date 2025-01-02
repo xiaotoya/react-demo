@@ -7,6 +7,10 @@
   --background: #c7dcff;
   --foreground: #171717;
   --blue: #1772f6;
+  --login-blue: #0063e4;
+  --border: #ebeced;
+  --form-gap: 1.5rem;
+  --input-height: 3rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +18,10 @@
     /* 设置暗色变量 */
     --background: #0a0a0a;
     --foreground: #ededed;
+    --border: #282b30;
+    --form-gap: 1.5rem;
+    --input-height: 3rem;
+    --login-blue: #558eff;
   }
 }
 
@@ -21,4 +29,5 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }

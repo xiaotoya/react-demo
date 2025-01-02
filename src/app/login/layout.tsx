@@ -25,6 +25,27 @@ const LoginLayoutCSS = styled.div`
       }
       .login-form {
         width: 400.8px;
+        border-left: 1px solid var(--border);
+        padding: 0 var(--form-gap) 30px;
+        margin-top: 16px;
+        .row-1 {
+          margin-top: 24px;
+        }
+        .row-2 {
+          margin-top: 11px;
+        }
+        .row-3 {
+          margin-top: 12px;
+        }
+        .submit-btn {
+          width: 100%;
+          background-color: var(--login-blue);
+          color: #fff;
+          height: 36px;
+          margin-top: 30px;
+          padding: 0 16px;
+          border-radius: 4px;
+        }
       }
     }    
   }
