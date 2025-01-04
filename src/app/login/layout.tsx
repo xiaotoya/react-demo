@@ -36,6 +36,10 @@ const LoginLayoutCSS = styled.div`
         }
         .row-3 {
           margin-top: 12px;
+          text-align: end;
+          a {
+            font-size: 14px;
+          }
         }
         .submit-btn {
           width: 100%;
@@ -45,6 +49,8 @@ const LoginLayoutCSS = styled.div`
           margin-top: 30px;
           padding: 0 16px;
           border-radius: 4px;
+          border: none;
+          cursor: pointer;
         }
       }
     }    

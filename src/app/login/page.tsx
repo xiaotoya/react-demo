@@ -2,21 +2,26 @@
 
 import Input from "@/components/input/input";
 import Tab, { TabItem } from "@/components/tab/tab";
-import { Fragment } from "react";
+import { Fragment, useRef, useState } from "react";
 import { useImmer } from "use-immer";
 
 export default function Login() {
+  const usernameRef = useRef<HTMLInputElement>(null);
+  const passwordRef = useRef<HTMLInputElement>(null);
+  const submitLogin = () => {
+    
+  };
   const passwordLogin = <Fragment>
     <div className="row-1">
-      <Input type={"text"} name={"username"} required={true} placeholder="请输入电话号码或者邮箱" />
+      <Input ref={usernameRef} type={"text"} name={"username"} required={true} placeholder="请输入电话号码或者邮箱" />
     </div>
     <div className="row-2">
-      <Input type={"password"} name={"password"} required={true} placeholder="密码" />
+      <Input ref={passwordRef} type={"password"} name={"password"} required={true} placeholder="密码" />
     </div>
     <div className="row-3">
       <a>忘记密码?</a>
     </div>
-    <button className="submit-btn">登录</button>
+    <button className="submit-btn" onClick={submitLogin}>登录</button>
   </Fragment>
   const [tab, setTab] = useImmer<TabItem[]>([
     {
