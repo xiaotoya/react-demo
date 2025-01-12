@@ -1,5 +1,5 @@
 export const constant = {
     api: {
-        login: '/api/login',
+        login: '/user/login',
     }
 };

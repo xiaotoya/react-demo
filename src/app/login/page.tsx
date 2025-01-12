@@ -4,12 +4,18 @@ import Input from "@/components/input/input";
 import Tab, { TabItem } from "@/components/tab/tab";
 import { Fragment, useRef, useState } from "react";
 import { useImmer } from "use-immer";
+import { login } from "./login";
 
 export default function Login() {
   const usernameRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
-  const submitLogin = () => {
-    
+  const submitLogin = async () => {
+    const data = {
+      username: usernameRef.current?.value,
+      password: passwordRef.current?.value,
+    };
+    const resp = await login(data);
+    console.log(resp);
   };
   const passwordLogin = <Fragment>
     <div className="row-1">
